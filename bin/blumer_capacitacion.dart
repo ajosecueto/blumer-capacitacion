@@ -22,7 +22,11 @@ class Bicycle {
 final List<Bicycle> bikes = [];
 
 void main() {
-  var bicycle = Bicycle(cadence: 2, gear: 1);
+  var bicycle = Bicycle(cadence: 2, gear: 1)
+  ..speedUp(10)
+  ..speedUp(10)
+  ..speedUp(10);
+
   bicycle.speedUp(10);
   bicycle.speedUp(15);
   bicycle.applyBrake(10);
